@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leona's Cakery - Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fffafc;
+            display: flex;
+            color: #333;
+        }
+
+        /* 5.2: Header + Nav */
+        .sidebar {
+            width: 250px;
+            background-color: #ffe6f0;
+            height: 100vh;
+            padding: 30px 20px;
+            position: fixed;
+        }
+
+        .logo h1 {
+            color: #FF69B4;
+            font-family: 'Great Vibes', cursive;
+            font-size: 32px;
+            margin-bottom: 5px;
+            font-weight: 400;
+        }
+
+        .logo p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .logo-img {
+            width: 100%;
+            max-width: 180px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-bottom: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 400;
+            padding: 12px 20px;
+            display: block;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            background-color: #FF69B4;
+            color: white;
+        }
+
+        /* 5.2: Main + 5.3: Content */
+        main {
+            margin-left: 250px;
+            padding: 60px;
+            width: 100%;
+            padding-bottom: 100px;
+        }
+
+        main section {
+            max-width: 900px;
+        }
+
+        main h2 {
+            font-size: 36px;
+            color: #FF69B4;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        main p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .service-grid {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            width: 260px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .service-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            color: #FF69B4;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-weight: 500;
+            color: #333;
+            font-size: 18px;
+        }
+
+        /* 5.2: Footer */
+        footer {
+            margin-left: 250px;
+            padding: 20px 60px;
+            background-color: #ffe6f0;
+            color: #666;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: calc(100% - 250px);
+        }
+    </style>
+</head>
+<body>
+    <!-- 5.2: Header Element -->
+    <header>
+        <div class="sidebar">
+            <div class="logo">
+                <h1>Leona's Cakery</h1>
+                <p>Sweet treats, baked with love</p>
+                <img src="Images/elation-logo.jpg" alt="Leona's Cakery Logo" class="logo-img">
+            </div>
+            <!-- 5.2: Nav Element -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 5.2: Main Element + 5.3: Content -->
+    <main>
+        <section>
+            <h2>Our Services & Prices</h2>
+            <p>All cakes are baked fresh to order in Pretoria. We use quality ingredients and can customize colors, flavors, and decorations. Order at least 3 days in advance.</p>
+            
+            <div class="service-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <img src="Images/cupcake1.jpg" alt="Assorted decorated cupcakes">
+                    <h3>Custom Cupcakes</h3>
+                    <p>Box of 12 cupcakes. Choose vanilla, chocolate, or red velvet. Perfect for parties.</p>
+                    <p class="price">R220 per box</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <img src="Images/cupcake2.jpg" alt="Yellow themed cupcakes">
+                    <h3>Birthday Cake</h3>
+                    <p>20cm round cake. Serves 8-10 people. Includes name and simple decoration.</p>
+                    <p class="price">From R350</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <img src="Images/cupcake3.jpg" alt="Pastel cupcakes with icing">
+                    <h3>Wedding Cakes</h3>
+                    <p>Multi-tier cakes designed to your theme. Includes tasting and delivery in Pretoria.</p>
+                    <p class="price">From R1200</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 5.2: Footer Element -->
+    <footer>
+        <p>&copy; 2026 Leona's Cakery | Pretoria, South Africa</p>
+    </footer>
+</body>
+</html>

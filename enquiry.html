@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leona's Cakery - Inquiry</title>
+    
+    <!-- Fonts: Great Vibes for logo, Poppins for text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            background-color: #FFF8F5;
+            color: #333;
+        }
+
+        /* Pink sidebar - same as other pages */
+        .sidebar {
+            width: 220px;
+            background-color: #FFE6EE;
+            height: 100vh;
+            padding: 30px 20px;
+            position: fixed;
+        }
+
+        .logo h1 {
+            color: #FF69B4;
+            font-family: 'Great Vibes', cursive;
+            font-size: 32px;
+            margin-bottom: 5px;
+            font-weight: 400;
+        }
+
+        .logo p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 40px;
+        }
+
+        .sidebar nav ul {
+            list-style: none;
+        }
+
+        .sidebar nav ul li {
+            margin-bottom: 20px;
+        }
+
+        .sidebar nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 400;
+            padding: 12px 20px;
+            display: block;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .sidebar nav ul li a.active,
+        .sidebar nav ul li a:hover {
+            background-color: #FF69B4;
+            color: white;
+        }
+
+        /* Main content */
+        .main-content {
+            margin-left: 220px;
+            padding: 40px;
+            width: calc(100% - 220px);
+        }
+
+        .inquiry-section h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: #222;
+        }
+
+        .inquiry-section > p {
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 30px;
+            max-width: 700px;
+        }
+
+        /* Form styling */
+        .inquiry-form {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            max-width: 600px;
+            border-top: 5px solid #D4AF37;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #444;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #FFE6EE;
+            border-radius: 8px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #FF69B4;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .submit-btn {
+            background-color: #FF69B4;
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background-color: #ff4fa7;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            
+            .main-content {
+                margin-left: 0;
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <h1>Leona's Cakery</h1>
+            <p>Custom Cakes</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="inquiry.html" class="active">Inquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <div class="inquiry-section">
+            <h1>Request a Quote</h1>
+            <p>Tell me about your dream cake! Fill out the form below and I’ll get back to you within 24 hours with a custom quote. The more details you give, the better I can match your vision.</p>
+
+            <form class="inquiry-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone/WhatsApp Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="event-date">Event Date *</label>
+                    <input type="date" id="event-date" name="event-date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cake-type">Type of Cake *</label>
+                    <select id="cake-type" name="cake-type" required>
+                        <option value="">Select one</option>
+                        <option value="birthday">Birthday Cake</option>
+                        <option value="wedding">Wedding Cake</option>
+                        <option value="cupcakes">Cupcakes</option>
+                        <option value="other">Other / Custom</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="servings">Number of Servings</label>
+                    <input type="number" id="servings" name="servings" placeholder="e.g. 20">
+                </div>
+
+                <div class="form-group">
+                    <label for="details">Tell me about your design *</label>
+                    <textarea id="details" name="details" placeholder="Theme, colours, flavours, inspiration pics, budget, etc." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Inquiry</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

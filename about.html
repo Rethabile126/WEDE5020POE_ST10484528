@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leona's Cakery - About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fffafc;
+            display: flex;
+            color: #333;
+        }
+
+        /* 5.2: Header + Nav */
+        .sidebar {
+            width: 250px;
+            background-color: #ffe6f0;
+            height: 100vh;
+            padding: 30px 20px;
+            position: fixed;
+        }
+
+        .logo h1 {
+            color: #FF69B4;
+            font-family: 'Great Vibes', cursive;
+            font-size: 32px;
+            margin-bottom: 5px;
+            font-weight: 400;
+        }
+
+        .logo p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .logo-img {
+            width: 100%;
+            max-width: 180px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-bottom: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 400;
+            padding: 12px 20px;
+            display: block;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            background-color: #FF69B4;
+            color: white;
+        }
+
+        /* 5.2: Main + 5.3: Content */
+        main {
+            margin-left: 250px;
+            padding: 60px;
+            width: 100%;
+            padding-bottom: 100px;
+        }
+
+        main section {
+            max-width: 800px;
+        }
+
+        main h2 {
+            font-size: 36px;
+            color: #FF69B4;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        main h3 {
+            font-size: 24px;
+            color: #FF69B4;
+            margin: 30px 0 15px 0;
+            font-weight: 500;
+        }
+
+        main p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .about-img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 12px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* 5.2: Footer */
+        footer {
+            margin-left: 250px;
+            padding: 20px 60px;
+            background-color: #ffe6f0;
+            color: #666;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: calc(100% - 250px);
+        }
+    </style>
+</head>
+<body>
+    <!-- 5.2: Header Element -->
+    <header>
+        <div class="sidebar">
+            <div class="logo">
+                <h1>Leona's Cakery</h1>
+                <p>Sweet treats, baked with love</p>
+                <img src="Images/elation-logo.jpg" alt="Leona's Cakery Logo" class="logo-img">
+            </div>
+            <!-- 5.2: Nav Element -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 5.2: Main Element + 5.3: Content -->
+    <main>
+        <section>
+            <h2>About Leona's Cakery</h2>
+            <p>Leona's Cakery started in 2022 in a small Pretoria kitchen with one oven and a big dream: to make beautiful, delicious cakes that create memories.</p>
+            
+            <img src="Images/wedding.jpg" alt="Elegant white wedding cake with floral decoration" class="about-img">
+            
+            <h3>Our Story</h3>
+            <p>What began as birthday cakes for family and friends quickly grew by word of mouth. Today, we specialize in custom birthday cakes, wedding cakes, and cupcakes for all occasions across Pretoria and surrounding areas.</p>
+            
+            <h3>Our Promise</h3>
+            <p>Every cake is baked from scratch using real butter, free-range eggs, and quality ingredients. We don’t use premixes. Each design is hand-piped and decorated with care, because we believe your celebration deserves something special.</p>
+            
+            <p>Thank you for supporting a local Pretoria business. We can’t wait to bake for you!</p>
+        </section>
+    </main>
+
+    <!-- 5.2: Footer Element -->
+    <footer>
+        <p>&copy; 2026 Leona's Cakery | Pretoria, South Africa</p>
+    </footer>
+</body>
+</html>
