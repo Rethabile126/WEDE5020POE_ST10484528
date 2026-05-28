@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leona's Cakery - Inquiry</title>
+    
+    <!-- Fonts: Great Vibes for logo, Poppins for text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+ <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <h1>Leona's Cakery</h1>
+            <p>Custom Cakes</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="inquiry.html" class="active">Inquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Enquiry - NPO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="enquiry.html">Enquiry</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Service Enquiry Form</h2>
+      <p>Use this form to enquire about services, products, volunteering, or sponsorship. We’ll get back to you with cost and availability.</p>
+      
+      <form id="enquiryForm" action="mailto:info@yourorg.com" method="post" enctype="text/plain">
+        
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required minlength="3" maxlength="50">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="0812345678" pattern="[0-9]{10}">
+
+        <label for="enquiryType">Enquiry Type:</label>
+        <select id="enquiryType" name="enquiryType" required>
+          <option value="">-- Select an option --</option>
+          <option value="service">Service Enquiry</option>
+          <option value="product">Product Enquiry</option>
+          <option value="volunteer">Become a Volunteer</option>
+          <option value="sponsor">Become a Sponsor</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="6" required minlength="10" maxlength="500" placeholder="Describe what you need..."></textarea>
+
+        <div id="errorMsg" class="error"></div>
+        
+        <button type="submit">Submit Enquiry</button>
+        <button type="reset">Clear Form</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+    </div>
+
+    <div class="main-content">
+        <div class="inquiry-section">
+            <h1>Request a Quote</h1>
+            <p>Tell me about your dream cake! Fill out the form below and I’ll get back to you within 24 hours with a custom quote. The more details you give, the better I can match your vision.</p>
+
+            <form class="inquiry-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone/WhatsApp Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="event-date">Event Date *</label>
+                    <input type="date" id="event-date" name="event-date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cake-type">Type of Cake *</label>
+                    <select id="cake-type" name="cake-type" required>
+                        <option value="">Select one</option>
+                        <option value="birthday">Birthday Cake</option>
+                        <option value="wedding">Wedding Cake</option>
+                        <option value="cupcakes">Cupcakes</option>
+                        <option value="other">Other / Custom</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="servings">Number of Servings</label>
+                    <input type="number" id="servings" name="servings" placeholder="e.g. 20">
+                </div>
+
+                <div class="form-group">
+                    <label for="details">Tell me about your design *</label>
+                    <textarea id="details" name="details" placeholder="Theme, colours, flavours, inspiration pics, budget, etc." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Inquiry</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

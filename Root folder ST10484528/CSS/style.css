@@ -1,0 +1,1045 @@
+/* Leona's Cakery - Global Styles */
+/* All 5 pages use this one file */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffafc;
+    display: flex;
+    color: #333;
+}
+
+/* 5.2: Sidebar Header + Navigation */
+.sidebar {
+    width: 250px;
+    background-color: #ffe6f0;
+    height: 100vh;
+    padding: 30px 20px;
+    position: fixed;
+}
+
+.logo h1 {
+    color: #FF69B4;
+    font-family: 'Great Vibes', cursive;
+    font-size: 32px;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.logo p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    width: 100%;
+    max-width: 180px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin-bottom: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    padding: 12px 20px;
+    display: block;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #FF69B4;
+    color: white;
+}
+
+/* 5.2: Main Content Area */
+main {
+    margin-left: 250px;
+    padding: 60px;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+main section {
+    max-width: 900px;
+}
+
+main h2 {
+    font-size: 36px;
+    color: #FF69B4;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+main h3 {
+    font-size: 22px;
+    color: #FF69B4;
+    margin: 30px 0 15px 0;
+    font-weight: 500;
+}
+
+main p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Images - Used on all pages */
+.hero-img,
+.about-img,
+.contact-img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.img-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.img-row img {
+    width: 48%;
+    max-width: 380px;
+}
+
+/* Services Page - Service Cards */
+.service-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.service-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 260px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.service-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    color: #FF69B4;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-weight: 500;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Contact Page */
+.contact-details {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.map-container {
+    margin-top: 30px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+}
+
+/* Enquiry Page - Form */
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ffe6f0;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #FF69B4;
+}
+
+button {
+    background-color: #FF69B4;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #e055a0;
+}
+
+/* 5.2: Footer */
+footer {
+    margin-left: 250px;
+    padding: 20px 60px;
+    background-color: #ffe6f0;
+    color: #666;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 250px);
+}
+
+        /* 5.2: Header + Nav */
+        .sidebar {
+            width: 250px;
+            background-color: #ffe6f0;
+            height: 100vh;
+            padding: 30px 20px;
+            position: fixed;
+        }
+
+        .logo p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .logo-img {
+            width: 100%;
+            max-width: 180px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-bottom: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 400;
+            padding: 12px 20px;
+            display: block;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            background-color: #FF69B4;
+            color: white;
+        }
+
+        /* 5.2: Main + 5.3: Content */
+        main {
+            margin-left: 250px;
+            padding: 60px;
+            width: 100%;
+            padding-bottom: 100px;
+        }
+
+        main section {
+            max-width: 800px;
+        }
+
+        main h2 {
+            font-size: 36px;
+            color: #FF69B4;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        main h3 {
+            font-size: 24px;
+            color: #FF69B4;
+            margin: 30px 0 15px 0;
+            font-weight: 500;
+        }
+
+        main p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .about-img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 12px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* 5.2: Footer */
+        footer {
+            margin-left: 250px;
+            padding: 20px 60px;
+            background-color: #ffe6f0;
+            color: #666;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: calc(100% - 250px);
+        }
+
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fffafc;
+            display: flex;
+            color: #333;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #ffe6f0;
+            height: 100vh;
+            padding: 30px 20px;
+            position: fixed;
+        }
+
+        .logo h1 {
+            color: #FF69B4;
+            font-family: 'Great Vibes', cursive;
+            font-size: 32px;
+            margin-bottom: 5px;
+            font-weight: 400;
+        }
+
+        .logo p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .logo-img {
+            width: 100%;
+            max-width: 180px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-bottom: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 400;
+            padding: 12px 20px;
+            display: block;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            background-color: #FF69B4;
+            color: white;
+        }
+
+        main {
+            margin-left: 250px;
+            padding: 60px;
+            width: 100%;
+            padding-bottom: 100px;
+        }
+
+        main section {
+            max-width: 800px;
+        }
+
+        main h2 {
+            font-size: 36px;
+            color: #FF69B4;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        main h3 {
+            font-size: 22px;
+            color: #FF69B4;
+            margin: 30px 0 15px 0;
+            font-weight: 500;
+        }
+
+        main p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .contact-img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 12px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .contact-details {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .map-container {
+            margin-top: 30px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 400px;
+            border: 0;
+        }
+
+        footer {
+            margin-left: 250px;
+            padding: 20px 60px;
+            background-color: #ffe6f0;
+            color: #666;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: calc(100% - 250px);
+        }
+
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            background-color: #FFF8F5;
+            color: #333;
+        }
+
+        /* Pink sidebar - same as other pages */
+        .sidebar {
+            width: 220px;
+            background-color: #FFE6EE;
+            height: 100vh;
+            padding: 30px 20px;
+            position: fixed;
+        }
+
+        .logo h1 {
+            color: #FF69B4;
+            font-family: 'Great Vibes', cursive;
+            font-size: 32px;
+            margin-bottom: 5px;
+            font-weight: 400;
+        }
+
+        .logo p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 40px;
+        }
+
+        .sidebar nav ul {
+            list-style: none;
+        }
+
+        .sidebar nav ul li {
+            margin-bottom: 20px;
+        }
+
+        .sidebar nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 400;
+            padding: 12px 20px;
+            display: block;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .sidebar nav ul li a.active,
+        .sidebar nav ul li a:hover {
+            background-color: #FF69B4;
+            color: white;
+        }
+
+        /* Main content */
+        .main-content {
+            margin-left: 220px;
+            padding: 40px;
+            width: calc(100% - 220px);
+        }
+
+        .inquiry-section h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: #222;
+        }
+
+        .inquiry-section > p {
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 30px;
+            max-width: 700px;
+        }
+
+        /* Form styling */
+        .inquiry-form {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            max-width: 600px;
+            border-top: 5px solid #D4AF37;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #444;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #FFE6EE;
+            border-radius: 8px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #FF69B4;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .submit-btn {
+            background-color: #FF69B4;
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background-color: #ff4fa7;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            
+            .main-content {
+                margin-left: 0;
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fffafc;
+            display: flex;
+            color: #333;
+        }
+
+        /* 5.2: Header + Nav */
+        .sidebar {
+            width: 250px;
+            background-color: #ffe6f0;
+            height: 100vh;
+            padding: 30px 20px;
+            position: fixed;
+        }
+
+        .logo h1 {
+            color: #FF69B4;
+            font-family: 'Great Vibes', cursive;
+            font-size: 32px;
+            margin-bottom: 5px;
+            font-weight: 400;
+        }
+
+        .logo p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .logo-img {
+            width: 100%;
+            max-width: 180px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-bottom: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 400;
+            padding: 12px 20px;
+            display: block;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            background-color: #FF69B4;
+            color: white;
+        }
+
+        /* 5.2: Main + 5.3: Content */
+        main {
+            margin-left: 250px;
+            padding: 60px;
+            width: 100%;
+            padding-bottom: 100px;
+        }
+
+        main section {
+            max-width: 900px;
+        }
+
+        main h2 {
+            font-size: 36px;
+            color: #FF69B4;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        main p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .service-grid {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            width: 260px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .service-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            color: #FF69B4;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-weight: 500;
+            color: #333;
+            font-size: 18px;
+        }
+
+        /* 5.2: Footer */
+        footer {
+            margin-left: 250px;
+            padding: 20px 60px;
+            background-color: #ffe6f0;
+            color: #666;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: calc(100% - 250px);
+        }
+
+        /* ===== 2.3 Apply Typography Styles ===== */
+h1, h2, h3, h4 {
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #ff69b4;
+    margin-bottom: 15px;
+}
+...rest of the code
+/* ===== 2.4 Create a Layout Structure ===== */
+
+/* Make the body a flex container for sidebar + main content */
+body {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar layout */
+.sidebar {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    background-color: #ffe6f0;
+}
+
+/* Main content area next to sidebar */
+.main-content {
+    margin-left: 250px;
+    flex: 1;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Flexbox for cards/sections */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.card {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+}
+/* ===== 2.5 Apply Visual Styles ===== */
+
+/* Style the sidebar and cards */
+.sidebar {
+    background-color: #ffe6f0;
+    border-right: 3px solid #ff69b4;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-content section {
+    background-color: #fff;
+    border: 1px solid #ffd6e8;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.main-content section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.25);
+}
+
+/* Style the navigation links */
+.sidebar nav ul li a {
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #ff69b4;
+    color: #fff;
+}
+
+.sidebar nav ul li a:active {
+    background-color: #e055a0;
+}
+
+.sidebar nav ul li a:focus {
+    outline: 2px solid #ff69b4;
+    outline-offset: 2px;
+}
+
+/* Style images and footer */
+.img-row img {
+    border: 3px solid #ffd6e8;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.img-row img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #ffe6f0;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #ff69b4;
+}
+/* ===== 3.1 Responsive Design - Breakpoints ===== */
+
+/* Tablet: 768px and below */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 3px solid #ff69b4;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 15px;
+    }
+
+    .sidebar nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Mobile: 480px and below */
+@media (max-width: 480px) {
+    .sidebar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .sidebar nav ul li a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-content {
+        padding: 20px 15px;
+    }
+
+    .img-row {
+        flex-direction: column;
+    }
+
+    .img-row img {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+}
+.accordion {
+  margin-top: 20px;
+}
+
+.accordion-btn {
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  cursor: pointer;
+  border: none;
+  background: #f1f1f1;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-btn:hover {
+  background: #e2e2e2;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  padding: 0 15px;
+  background: #fafafa;
+}
+
+.accordion-content p {
+  margin: 15px 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+input, select, textarea, button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+}
